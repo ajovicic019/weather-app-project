@@ -1,0 +1,162 @@
+body {
+  width: 1000px;
+  font-family: "Barlow", sans-serif;
+}
+h1 {
+  text-transform: capitalize;
+}
+
+h2 {
+  position: relative;
+  top: -150px;
+  right: -300px;
+  font-size: 36px;
+  max-width: 300px;
+  border: 1px solid #ffe79a;
+  border-radius: 50%;
+
+  text-align: center;
+  padding: 15px 10px 50px 10px;
+}
+form {
+  width: 200px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+a {
+  color: #ffe79a;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffe79a;
+  opacity: 50%;
+  text-decoration: underline;
+}
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+.description {
+  text-transform: capitalize;
+}
+.search-button {
+  border-radius: 4px;
+  background-color: #ffe79a;
+  color: #212121;
+  transition: all 100ms ease-in;
+  position: relative;
+  left: 200px;
+  bottom: 30px;
+}
+.search-button:hover {
+  background-color: #212121;
+  color: #ffe79a;
+}
+.container {
+  border-radius: 8px;
+  height: 800px;
+  margin: 120px 30px;
+  padding: 24px 15px;
+  color: #ffe79a;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+}
+.timeNplace {
+  position: relative;
+  top: 50px;
+  padding-left: 20px;
+}
+.timeNplace p {
+  line-height: 8px;
+}
+.fahrenhait {
+  opacity: 50%;
+}
+.elements {
+  text-align: center;
+
+  margin: 0 auto;
+  padding: 5px;
+  line-height: 24px;
+  border: 1px solid #ffe79a;
+  border-radius: 8px;
+  background-color: #212121;
+  color: #ffe79a;
+  display: block;
+  width: 400px;
+}
+.description {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.card {
+  transition: all 150ms ease ease-in-out;
+  position: relative;
+  left: 750px;
+  bottom: 400px;
+  color: #212121;
+
+  background-color: #ffe79a;
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #212121;
+  color: #ffe79a;
+}
+#location-button {
+  transition: all 150ms ease ease-in-out;
+  color: #212121;
+  background-color: #ffe79a;
+  border-radius: 4px;
+  position: relative;
+  top: 120px;
+  left: 380px;
+}
+#location-button:hover {
+  cursor: pointer;
+  background-color: #212121;
+  color: #ffe79a;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  bottom: 500px;
+  padding: 0 0 50px 20px;
+  width: 200px;
+}
+li:hover {
+  opacity: 50%;
+
+  cursor: pointer;
+}
+.row {
+  position: relative;
+  bottom: 400px;
+}
+.col-2 {
+  text-align: center;
+  border: 1px solid #ffe79a;
+
+  border-radius: 4px;
+
+  background-color: transparent;
+  color: #ffe79a;
+  padding: 52px;
+  font-size: 24px;
+}
+.col-2:hover {
+  transform: scale(1.1);
+  transition: all 200ms ease-in-out;
+  background-color: #ffe79a;
+  color: #212121;
+}
+.enter-city {
+  background-color: #ffe79a;
+}
