@@ -56,7 +56,7 @@ a:hover {
 }
 .container {
   border-radius: 8px;
-  height: 800px;
+  height: 850px;
   margin: 120px 30px;
   padding: 24px 15px;
   color: #ffe79a;
@@ -65,6 +65,13 @@ a:hover {
     rgb(50, 50, 50) 0%,
     rgb(0, 0, 0) 99.4%
   );
+}
+.linkToCode {
+  margin-top: 15px;
+  padding: 15px;
+}
+.myName {
+  opacity: 50%;
 }
 .timeNplace {
   position: relative;
