@@ -155,8 +155,7 @@ li:hover {
 
   background-color: transparent;
   color: #ffe79a;
-  padding: 52px;
-  font-size: 24px;
+  padding: 42px;
 }
 .col-2:hover {
   transform: scale(1.1);
@@ -166,4 +165,16 @@ li:hover {
 }
 .enter-city {
   background-color: #ffe79a;
+}
+.forcast-day {
+  padding-bottom: 10px;
+  font-size: 24px;
+  opacity: 90%;
+  letter-spacing: 1px;
+}
+.forcast-temperature {
+  padding-top: 15px;
+  font-size: 20px;
+  opacity: 80%;
+  letter-spacing: 2px;
 }
