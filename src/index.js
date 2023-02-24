@@ -73,3 +73,24 @@ function currentCity(event) {
 
 let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", currentCity);
+
+function displayForecast() {
+  forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+          <div class="col-2">
+            <div class="forcast-day">${day}</div>
+            <i class="fa-solid fa-cloud"></i>
+            <div class="forcast-temperature">8°-4°</div>
+          </div>
+       `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+displayForecast();
