@@ -170,7 +170,6 @@ li:hover {
   background-color: #ffe79a;
 }
 .forcast-day {
-  text-align: left;
   padding-bottom: 10px;
   font-size: 18px;
   opacity: 90%;
@@ -180,5 +179,5 @@ li:hover {
   padding-top: 15px;
   font-size: 16px;
   opacity: 80%;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }

@@ -85,21 +85,44 @@ locationButton.addEventListener("click", currentCity);
 
 function displayForecast(responce) {
   console.log(responce.data.daily);
+  let forecast = responce.data.daily;
   forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  let days = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
           <div class="col-2">
-            <div class="forcast-day">${day}</div>
-            <i class="fa-solid fa-cloud"></i>
-            <div class="forcast-temperature">8°-4°</div>
+            <div class="forcast-day">${formatDay(forecastDay.time)}</div>
+            <img src=${forecastDay.condition.icon_url} alt=${
+          forecastDay.condition.icon
+        }/>
+            <div class="forcast-temperature">${Math.round(
+              forecastDay.temperature.maximum
+            )}°${Math.round(forecastDay.temperature.minimum)}°</div>
           </div>
        `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
+}
+function formatDay(timeStamp) {
+  let date = new Date(timeStamp * 1000);
+  let day = date.getDay();
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  return days[day];
 }
