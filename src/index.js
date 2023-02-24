@@ -17,6 +17,14 @@ let minutes = ("0" + dayTime.getMinutes()).slice(-2);
 let currentDayTime = document.querySelector("#current-day-time");
 currentDayTime.innerHTML = `${day} ${hours}:${minutes}`;
 
+function forecastDaysTemperature(coord) {
+  console.log(coord);
+  let apiKey = "1adctff63f8604o7420ebd0cf0f3f035";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coord.lon}&lat=${coord.lat}&key=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function showTemperature(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   let temperature = document.querySelector("#current-temperature");
@@ -31,6 +39,7 @@ function showTemperature(response) {
   let humidity = document.querySelector("#humidity");
   let percentHumidity = response.data.main.humidity;
   humidity.innerHTML = `Humidity: ${percentHumidity}%   `;
+  forecastDaysTemperature(response.data.coord);
 }
 
 function searchCity(city) {
@@ -74,7 +83,8 @@ function currentCity(event) {
 let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", currentCity);
 
-function displayForecast() {
+function displayForecast(responce) {
+  console.log(responce.data.daily);
   forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   let days = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"];
@@ -93,4 +103,3 @@ function displayForecast() {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
-displayForecast();
