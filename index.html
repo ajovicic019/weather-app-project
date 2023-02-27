@@ -43,11 +43,13 @@
         </form>
 
         <h1></h1>
-        <p id="current-day-time">Thursday 13:00</p>
+        <p id="current-day-time"></p>
       </div>
+
       <button id="location-button">Current Location</button>
 
       <h2>
+        <img src="" id="icon" /><br />
         <span id="current-temperature"></span><span id="celsius-temp">C</span>
 
         <br /><span class="description" id="description"></span>
@@ -55,22 +57,24 @@
 
       <div class="elements">
         <p>
-          <span id="humidity">Humidity & </span>
-          <span id="wind"> Wind </span>
+          <span id="humidity"> </span>
+          <span id="wind"> </span>
         </p>
       </div>
 
-      <div class="card" style="width: 8rem">
-        <img src="images/cocoa.jpeg" class="card-img-top" alt="..." />
+      <div class="card" style="width: 10rem; height: 18rem">
+        <img src="images/forest2.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <p class="card-text">Enjoy your favorite coffee today...</p>
+          <p class="card-text">There is no planet B...</p>
+          <a
+            href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwittaXF1bX9AhVW5ncKHdvPD-YYABADGgJlZg&ohost=www.google.com&cid=CAESa-D2Mxb5x1rxmqvPqqzpRxixLnOaxgeGeTWM6465H_37XFEC-Ux_JLlAW13pk7Z_FuRTsnRwAXx9H9JlzFthaUjALOqLK9aKlW-WkwqAawP5qFoJzaF4SN_tmRfgOBxvuH0hrxw_NinoaCBI&sig=AOD64_2vsPoXFZGKz9L0QjOgDT9FoMnccg&q&adurl&ved=2ahUKEwigoJ7F1bX9AhXQjqQKHbV-CSMQ0Qx6BAgLEAE"
+            class="btn btn-warning"
+            target="_blank"
+            >Donate</a
+          >
         </div>
       </div>
-      <ul>
-        <li>Temperature</li>
-        <li>Precipitation</li>
-        <li>Wind</li>
-      </ul>
+
       <div id="forecast"></div>
 
       <p class="linkToCode">

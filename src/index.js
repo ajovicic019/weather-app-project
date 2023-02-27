@@ -26,6 +26,13 @@ function forecastDaysTemperature(coord) {
 
 function showTemperature(response) {
   document.querySelector("h1").innerHTML = response.data.name;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
   let temperature = document.querySelector("#current-temperature");
   let celsiusTemp = Math.round(response.data.main.temp);
   temperature.innerHTML = `${celsiusTemp}°`;
@@ -100,7 +107,7 @@ function displayForecast(responce) {
         } /></div>
             <div class="forcast-temperature">${Math.round(
               forecastDay.temperature.maximum
-            )}°${Math.round(forecastDay.temperature.minimum)}°</div>
+            )}°/${Math.round(forecastDay.temperature.minimum)}°</div>
           </div>
        `;
     }
