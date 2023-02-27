@@ -10,7 +10,7 @@ h2 {
   position: relative;
   top: -150px;
   right: -300px;
-  font-size: 36px;
+  font-size: 42px;
   max-width: 300px;
   border: 1px solid #ffe79a;
   border-radius: 50%;
@@ -37,6 +37,9 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
+}
+#celsius-temp {
+  font-weight: lighter;
 }
 .description {
   text-transform: capitalize;
@@ -84,9 +87,7 @@ a:hover {
 .timeNplace p {
   line-height: 8px;
 }
-.fahrenhait {
-  opacity: 50%;
-}
+
 .elements {
   text-align: center;
 
@@ -99,10 +100,13 @@ a:hover {
   color: #ffe79a;
   display: block;
   width: 400px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
 .description {
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
 }
 .card {
   transition: all 150ms ease ease-in-out;
@@ -150,10 +154,13 @@ li:hover {
   position: relative;
   bottom: 400px;
 }
+.icon {
+  display: block;
+  margin: 0 auto;
+}
 .col-2 {
-  text-align: center;
   border: 1px solid #ffe79a;
-
+  text-align: center;
   border-radius: 4px;
 
   background-color: transparent;
@@ -171,13 +178,13 @@ li:hover {
 }
 .forcast-day {
   padding-bottom: 10px;
-  font-size: 18px;
+  font-size: 24px;
   opacity: 90%;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 .forcast-temperature {
   padding-top: 15px;
-  font-size: 16px;
+  font-size: 22px;
   opacity: 80%;
   letter-spacing: 5px;
 }
